@@ -5,21 +5,39 @@
 ## 파일 구조 (노트북 순서대로)
 
 - `01_config.py`: 모델 하이퍼파라미터 및 토크나이저 설정
+- `01_tokenizer_test.py`: 토크나이저 테스트 스크립트
 - `02_dataset.py`: 데이터셋 및 데이터로더 정의
+- `02_dataset_test.py`: 데이터셋 테스트 스크립트
 - `03_model.py`: GPT 모델 아키텍처 정의
 - `04_train.py`: 모델 훈련 스크립트
 - `05_generate.py`: 텍스트 생성 함수
 - `06_inference.py`: 모델 추론 및 결과 확인
 
+## 데이터
+
+- `../assets/cleaned_norway_forest_en.txt`: 샘플 훈련 데이터
+
 ## 사용 방법
 
-### 1. 훈련
+### 1. 토크나이저 테스트
+
+```bash
+python 01_tokenizer_test.py
+```
+
+### 2. 데이터셋 테스트
+
+```bash
+python 02_dataset_test.py
+```
+
+### 3. 훈련
 
 ```bash
 python 04_train.py
 ```
 
-### 2. 추론
+### 4. 추론
 
 ```bash
 python 06_inference.py
