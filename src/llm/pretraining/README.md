@@ -2,6 +2,29 @@
 
 대형언어모델(LLM) 사전훈련 코드입니다.
 
+## 설치
+
+### 1. 가상환경 생성 (권장)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # macOS/Linux
+# 또는
+venv\Scripts\activate  # Windows
+```
+
+### 2. 필요한 패키지 설치
+
+```bash
+pip install -r requirements.txt
+```
+
+또는 개별 설치:
+
+```bash
+pip install torch tiktoken matplotlib
+```
+
 ## 파일 구조 (노트북 순서대로)
 
 - `01_config.py`: 모델 하이퍼파라미터 및 토크나이저 설정

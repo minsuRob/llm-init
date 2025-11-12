@@ -21,7 +21,12 @@ create_dataloader = dataset_module.create_dataloader
 tokenizer = config_module.tokenizer
 
 # 데이터 경로
-data_path = "../assets/cleaned_norway_forest_en.txt"
+import os
+# 프로젝트 루트 디렉토리 찾기 (pretraining -> llm -> src -> root)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))
+data_path = os.path.join(project_root, "assets", "short_forest.txt")
+print(f"Data path: {data_path}")
 
 # 데이터로더 생성
 print("Creating dataloader...")
